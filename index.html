@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Startup Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <!-- <nav class="navbar">
+        <ul class="nav-list">
+            <li class="nav-item"><a href="#about us ">About Us</a></li>
+            <li class="nav-item"><a href="#services">Services</a></li>
+            <li class="nav-item"><a href="#team">Team</a></li>
+            <li class="nav-item"><a href="#contact us">Contact Us</a></li>
+        </ul>
+    </nav> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function() {
+        // Smooth scrolling for navigation links
+        $(".navbar a").on("click", function(event) {
+            if (this.hash !== "") {
+                event.preventDefault();
+
+                // Get the hash (section ID) from the clicked link
+                var hash = this.hash;
+
+                // Animate scroll to the target section
+                $("html, body").animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function() {
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+            }
+        });
+    });
+</script>
+
+    <!-- Header Section -->
+    <header class="header">
+        <div class="logo">
+            <a href="#home"></a>
+        </div>
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#home">Home</a></li>
+                <li class="nav-item"><a href="#features">Features</a></li>
+                <li class="nav-item"><a href="#team">Team</a></li>
+                <li class="nav-item"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>WEB WIZARDS</h1>
+            <p class="animated-text">Where innovation meets web perfection</p>
+            <a href="#contact" class="cta-button">Get in Touch</a>
+        </div>
+    </section>
+<!-- about us  Section -->
+<section class="about">
+    <div class="about">
+        <h2>About Us</h2></br></br>
+        <p> "We Beleive that good design is powerful,Hardwork is essential,and exploring the unknown is important "</br></br>
+            As we look to the future, our vision remains clear to be at the forefront of technological innovation.</br>
+            We're excited about the opportunities that lie ahead and are committed to pushing the boundaries of what technology can achieve.</br>
+            Join us on this exciting journey of innovation.</br></br></br>
+            Explore our range of cutting-edge products and discover how Web Wizards can be a partner in your success story.</br>
+            we provide professional website design services that help businesses establish a strong online presence and attract more customers.</br>
+            Our team of experienced designers and developers create custom websites that are tailored to your business goals and objectives.</br>
+            We understand that every business has unique needs, 
+            which is why we offer a wide range of website design services to meet your specific requirements.
+            </p>
+        </div>
+    <!-- services Section -->
+    <section class="services">
+        <div class="services">
+            <!-- <img src="service1-images/image2.jpg" alt="Service 1"> -->
+            <h2>Our Services</h2></br></br>
+            <p>Web Development</p></br>
+            <p>Website Design</p></br>
+            <p>Custom Web Application Development</p></br>
+            <p>Content Management Systems (CMS)</p></br>
+            <p>E-commerce Development</p></br>
+            <p>Mobile-Responsive Design</p></br>
+            <p>Web Maintenance and Support</p></br>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team">
+        <div class="team">
+            <h2>Team</h2></br></br>
+            <p>Our team is united by a shared passion for technology and a commitment to excellence.</br>
+              We collaborate seamlessly to deliver exceptional results for our clients, and our dedication to innovation drives us to stay at the forefront of the industry.</p></br>
+            
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>Reach out to us for more information and collaboration.</p>
+        <form action="contact.php" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit" class="cta-button">Submit</button>
+        </form>
+    </section>
+    <!-- Copyright Preservation Section -->
+<!-- Copyright Preservation Section -->
+<footer class="footer">
+    <div class="copyright">
+        &copy; 2023 Web Wizards. All Rights Reserved.
+    </div>
+
+    <!-- Footer Navigation -->
+    <nav class="footer-nav">
+        <ul class="nav-list">
+            <li class="nav-item"><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li class="nav-item"><a href="terms-of-service.html">Terms of Service</a></li>
+            <!-- Add more navigation links as needed -->
+        </ul>
+    </nav>
+</footer>
+</body>
+</html>
+
